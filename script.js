@@ -27,6 +27,7 @@ function check(total) {
 
 ////Event Listener for Key "Enter"///
 var input = document.getElementById("input").addEventListener("keypress", function(event) {
+    event.preventDefault();
     if (event.key === "Enter") {
         document.getElementById("onEnter").click();
     }
