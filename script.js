@@ -26,12 +26,11 @@ function check(total) {
 }
 
 ////Event Listener for Key "Enter"///
-var input = document.getElementById("input");
-input.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
+var input = document.getElementById("input").addEventListener("keypress", function(event) {
     event.preventDefault();
-    document.getElementById("onEnter").click();
-  }
+    if (event.key === "Enter") {
+        document.getElementById("onEnter").click();
+    }
 });
 
 ////Function to Calculate///
