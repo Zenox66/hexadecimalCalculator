@@ -64,7 +64,8 @@ body {
 
 .equal {
     grid-column: 1 / span 2; 
-    height: 110px;           
+    height: 110px;
+    width: 250px;
 }
 
 /* BUTTON STYLE */
