@@ -17,7 +17,7 @@ function check(total) {
             char === '+' || char === '-' ||
             char === ' '
         ) {
-            continue; // valid 
+            return true; // valid 
         } else {
             return false; // invalid 
         }
@@ -33,7 +33,7 @@ function calculate() {
         alert("Error! please enter a value!");
         return;
     }
-    if (!check(total)) {
+    if (check(total)) {
         alert("Invalid input! Only 0-9 and A-F are allowed!");
         return;
     }
