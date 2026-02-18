@@ -1,4 +1,3 @@
-
 ////Function to Display///
 function appendToDisplay(input) {
     const inputvalue = document.display.inputvalue.value;
@@ -26,9 +25,20 @@ function check(total) {
     return true; // valid
 }
 
+////Event Listener for Key "Enter"///
+var input = document.getElementById("input");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("onEnter").click();
+  }
+});
+
 ////Function to Calculate///
 function calculate() {
     let total = document.display.inputvalue.value;
+    
+    if (event.key === "Enter")
     if (!total) {
         alert("Error! please enter a value!");
         return;
