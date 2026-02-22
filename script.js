@@ -41,7 +41,7 @@ function calculate() {
         alert("Error! please enter a value!");
         return;
     }
-    if (check(!total)) {
+    if (!check(total)) {
         alert("Invalid input! Only 0-9, A-F, +, and - values are allowed!");
         return;
     }
