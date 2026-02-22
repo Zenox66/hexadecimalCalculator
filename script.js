@@ -16,7 +16,7 @@ function check(total) {
             char === '+' || char === '-' ||
             char === ' '
         ) {
-            return true; // valid 
+            continue; // valid 
         } else {
             return false; // invalid 
         }
