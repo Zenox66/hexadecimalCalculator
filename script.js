@@ -36,11 +36,12 @@ var input = document.getElementById("input").addEventListener("keypress", functi
 ////Function to Calculate///
 function calculate() {
     let total = document.display.inputvalue.value;
-    
+    ///Checks Function if Value is empty///
     if (!total) {
         alert("Error! please enter a value!");
         return;
     }
+    ///Call to Check Function///
     if (!check(total)) {
         alert("Invalid input! Only 0-9, A-F, +, and - values are allowed!");
         return;
