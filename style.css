@@ -47,6 +47,26 @@ body {
     gap: 25px;
 }
 
+.hex-block button:nth-child(1){
+    background-color: rgb(196, 123, 75);
+}
+
+.hex-block button:nth-child(2){
+    background-color: rgb(190, 150, 19);
+}
+.hex-block button:nth-child(3){
+    background-color: rgb(211, 192, 82);
+}
+.hex-block button:nth-child(4){
+    background-color: rgb(116, 170, 15);
+}
+.hex-block button:nth-child(5){
+    background-color: rgb(55, 45, 182);
+}
+.hex-block button:nth-child(6){
+    background-color: rgb(158, 48, 209);
+}
+
 /* NUMBER BLOCK */
 .number-block {
     display: grid;
