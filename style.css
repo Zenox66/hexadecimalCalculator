@@ -85,3 +85,10 @@ button:hover {
     background: #707070;
     transform: scale(1.05);
 }
+.title {
+    font-family: "Lexend Peta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
