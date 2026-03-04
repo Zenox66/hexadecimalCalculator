@@ -9,7 +9,7 @@ body {
 }
 
 #calculator {
-    background: #4ea79f;
+    background: #5ed678;
     width: 950px;
     padding: 40px;
     border-radius: 40px;
@@ -17,7 +17,7 @@ body {
 
 /* DISPLAY */
 .display-container {
-    background: #5ed678;
+    background: #b9d8cd;
     padding: 30px;
     border-radius: 30px;
     margin-bottom: 40px;
