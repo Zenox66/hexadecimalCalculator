@@ -83,7 +83,7 @@ body {
      
 }
 
-.minus{
+.minus:hover{
     background-color: #dfc98a;
     transform: scale(1.05);
 }
