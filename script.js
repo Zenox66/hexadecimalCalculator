@@ -51,7 +51,7 @@ function calculate() {
         let currentHex = "";
 
         for (let i = 0; i < total.length; i++) {
-                let char = total[i].toUpperCase();
+            let char = total[i].toUpperCase();
             if (char >= '0' && char <= '9') {
                 currentHex += char;
             }
@@ -59,13 +59,14 @@ function calculate() {
                 currentHex += char;
             }
             else if (char == '+' || char == '-') {
-            if (currentHex !== "") {
-                decimal += parseInt(currentHex, 16);
-                currentHex = "";
+                if (currentHex !== "") {
+                    decimal += parseInt(currentHex, 16);
+                    currentHex = "";
             }
             decimal += char;
             }
         }
+        
         if (currentHex !== "") {
             decimal += parseInt(currentHex, 16);
         }
