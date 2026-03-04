@@ -82,7 +82,7 @@ function calculate() {
 
 }
 
-////Function to Backspace///
+////Function to Backspace - DISCONTINUED///
 function backspace() {
     let inputvalue = document.display.inputvalue.value;
     inputvalue = inputvalue.slice(0, -1);
