@@ -71,11 +71,21 @@ body {
 
 .plus {
     background-color: #737000;
-    
+}
+
+.plus:hover{
+    background-color: #dfc98a;
+    transform: scale(1.05);
 }
 
 .minus {
-     background-color: #dfc98a
+    background-color: #737000;
+     
+}
+
+.minus{
+    background-color: #dfc98a
+    transform: scale(1.05);
 }
 
 /* BUTTON STYLE */
