@@ -69,6 +69,15 @@ body {
     width: 250px;
 }
 
+.plus {
+    background-color: #737000;
+    
+}
+
+.minus {
+     background-color: #dfc98a
+}
+
 /* BUTTON STYLE */
 button {
     width: 110px;
