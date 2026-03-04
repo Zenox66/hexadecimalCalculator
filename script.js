@@ -46,11 +46,14 @@ function calculate() {
         alert("Invalid input! Only 0-9, A-F, +, and - values are allowed!");
         return;
     }
+
+    ///Calculate///
     if (total){
         let decimal = "";
         let currentHex = "";
 
         for (let i = 0; i < total.length; i++) {
+            ///Converts current characters into uppercase///
             let char = total[i].toUpperCase();
             if (char >= '0' && char <= '9') {
                 currentHex += char;
@@ -60,6 +63,7 @@ function calculate() {
             }
             else if (char == '+' || char == '-') {
                 if (currentHex !== "") {
+                    ///ParseInt converts hexadecimal values into decimal///
                     decimal += parseInt(currentHex, 16);
                     currentHex = "";
             }
@@ -71,6 +75,7 @@ function calculate() {
             decimal += parseInt(currentHex, 16);
         }
         const resultDecimal = Function("return " + decimal)();
+         ///ToString converts decimal values into hexadecimal///
         const resultHex = resultDecimal.toString(16).toUpperCase();
         document.display.inputvalue.value = resultHex;
     }
