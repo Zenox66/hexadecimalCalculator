@@ -8,6 +8,9 @@
     </head>
     <body>
         <div id="calculator">
+            <div>
+                <h1>HEXADECIMAL CALCULATOR</h1>
+            </div>
             <div class="display-container">
                 <form name = "display">
                     <input type="text" name="inputvalue" class="input" id="input">
@@ -34,8 +37,7 @@
                     <button onclick="appendToDisplay('3')">3</button>
                 </div>
                 <div class="operator-block">
-                    <button onclick="clearDisplay()">C</button>
-                    <button onclick="backspace()">⌫</button>            
+                    <button onclick="clearDisplay()">C</button>            
                     <button onclick="appendToDisplay('+')">+</button>
                     <button onclick="appendToDisplay('-')">-</button>
                     <button onclick="calculate()" class="equal" id="onEnter">=</button>
